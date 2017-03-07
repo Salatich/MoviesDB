@@ -18,6 +18,9 @@ public class Movie {
 	@Column(name = "NAME")
 	private String name;
 	
+	@Column(name = "GENRE")
+	private String genre;
+	
 	public Integer getId(){
 		return id;
 	}
@@ -32,6 +35,14 @@ public class Movie {
 	
 	public void setName(String name){
 		this.name = name;
+	}
+	
+	public String getGenre(){
+		return genre;
+	}
+	
+	public void setGenre(String genre){
+		this.genre = genre;
 	}
 	
 }
